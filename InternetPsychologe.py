@@ -21,9 +21,14 @@
 #  MA 02110-1301, USA.
 #  
 #  
+
 import tweepy
 from textblob import TextBlob
 from sys import argv
+import yaml
+import re
+import pandas as pd 
+import time 
 
 print("Import finished...")
 
@@ -99,7 +104,7 @@ def analyze(al,dataFrame):
 
 def main():
     #Initialise Twitter Api
-    api = get_api_access
+    api = get_api_access()
     print("Hi , Im an Internet Psycho Script")
     print("I'd like to ask you a few questions.")
     #query = input("What can I give you information about on Twitter? ")
